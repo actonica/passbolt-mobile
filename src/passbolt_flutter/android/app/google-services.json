@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1234567890",
+    "firebase_url": "https://passbolt-credentials-manager.firebaseio.com",
+    "project_id": "passbolt-credentials-manager",
+    "storage_bucket": "passbolt-credentials-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1234567890:android:ff1234567890",
+        "android_client_info": {
+          "package_name": "com.actonica.pb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1234567890-luhjl2mg1sqbg1ep1e9rs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXxW3e17iZ63izYMkm19"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1234567890-luhjl2mg1sqbg1ep1e9rs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1234567890:android:48992402e31e44b2df9835",
+        "android_client_info": {
+          "package_name": "com.actonica.pb.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1234567890-luhjl2mg1sqbg1ep1e9rs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXxW3e17iZ63izYMkm19"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069000827632-luhjl2mg1sqbg1ep1e9rs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

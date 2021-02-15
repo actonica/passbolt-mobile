@@ -1,0 +1,14 @@
+//
+//  dev.xcconfig
+//  Runner
+//
+//  Created by Роман Митюков on 08.11.2019.
+//  Copyright © 2019 The Chromium Authors. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-dev.xcconfig"
+#include "Generated.xcconfig"
+name_suffix=DEV.
+bundle_suffix=.dev

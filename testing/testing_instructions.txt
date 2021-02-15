@@ -1,0 +1,11 @@
+serverUrl: passbolt.actonica.ru
+fingerprint: C1292B2BEB987CAFAD778A5F1D4D23EF22B120C8
+
+private key passphrase: appletest
+private key content (copy with -----BEGIN PGP PRIVATE KEY BLOCK----- and -----END PGP PRIVATE KEY BLOCK----- strings):
+-----BEGIN PGP PRIVATE KEY BLOCK-----
+Version: OpenPGP.js v4.10.4
+Comment: https://openpgpjs.org
+
+
+-----END PGP PRIVATE KEY BLOCK-----

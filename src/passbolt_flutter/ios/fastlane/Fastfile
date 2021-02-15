@@ -1,0 +1,32 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  changelog = changelog_from_git_commits(pretty: "- (%ae) %s",# Optional, lets you provide a custom format to apply to each commit when generating the changelog text
+                                         date_format: "short",# Optional, lets you provide an additional date format to dates within the pretty-formatted string
+                                         merge_commit_filtering: "exclude_merges",
+                                         tag_match_pattern: "build-*")
+  desc "Upload to TestFlight"
+  lane :prod_deploy_ios do
+    upload_to_testflight(
+        username: "roman.mityukov@actonica.ru",
+        ipa: "build/Runner.ipa/passbolt_flutter.ipa",
+        changelog: changelog
+      )
+  end
+end

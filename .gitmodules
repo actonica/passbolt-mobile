@@ -1,0 +1,9 @@
+[submodule "src/passbolt_flutter/injection/inject.dart"]
+	path = src/passbolt_flutter/injection/inject.dart
+	url = https://github.com/romsvm/inject.dart
+[submodule "src/passbolt_flutter/biometricsvault"]
+	path = src/passbolt_flutter/biometricsvault
+	url = ../biometricsvault.git
+[submodule "src/passbolt_flutter/autofill"]
+	path = src/passbolt_flutter/autofill
+	url = ../autofill.flutterplugin.git

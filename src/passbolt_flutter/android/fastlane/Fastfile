@@ -1,0 +1,39 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  changelog = changelog_from_git_commits(pretty: "- (%ae) %s",# Optional, lets you provide a custom format to apply to each commit when generating the changelog text
+                                         date_format: "short",# Optional, lets you provide an additional date format to dates within the pretty-formatted string
+                                         merge_commit_filtering: "exclude_merges",
+                                         tag_match_pattern: "build-*")
+
+  desc "Upload to GooglePay internal testing track"
+    lane :prod_deploy_android do
+      upload_to_play_store(
+          track: "internal",
+          apk: "../build/app/outputs/apk/prod/release/app-prod-release.apk")
+    end
+
+  desc "Write changelog to metadata"
+    lane :write_changelog do
+      `mkdir -p fastlane/metadata/android/en-US/changelogs`
+      `mkdir -p fastlane/metadata/android/ru-RU/changelogs`
+      `echo "#{changelog}" > fastlane/metadata/android/en-US/changelogs/1.0.0.txt`
+      `echo "#{changelog}" > fastlane/metadata/android/ru-RU/changelogs/1.0.0.txt`
+    end
+end

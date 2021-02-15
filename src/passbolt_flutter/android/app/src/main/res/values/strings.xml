@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Passbolt</string>
+    <string name="app_name_qa">QA.Passbolt</string>
+    <string name="app_name_dev">DEV.Passbolt</string>
+</resources>
